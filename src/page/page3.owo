@@ -1,0 +1,87 @@
+<template lang="pug">
+.page3
+  img.so.so-3(src="@|page2-740.png|")
+  .message-box
+    .message-bar(o-tap="selectIt")
+      h2 未接来电·3分钟前
+      h3 小皮
+      h4 江西  响铃11秒
+    .message-bar
+      h2 未接来电·3分钟前
+      h3 小皮
+      h4 江西  响铃11秒
+    .message-bar
+      h2 未接来电·3分钟前
+      h3 小皮
+      h4 江西  响铃11秒
+    .message-bar
+      h2 未接来电·3分钟前
+      h3 小皮
+      h4 江西  响铃11秒
+    .message-bar
+      h2 未接来电·3分钟前
+      h3 小皮
+      h4 江西  响铃11秒
+    .message-bar
+      h2 未接来电·3分钟前
+      h3 小皮
+      h4 江西  响铃11秒
+</template>
+<script>
+module.exports = {
+  selectIt: function () {
+    owo.go('page4//moveToTop/moveFromBottom/true/moveToBottom/moveFromTop')
+  }
+}
+</script>
+<style lang="less">
+.so-3 {
+  left: 25px;
+  top: 190px;
+  z-index: -3;
+}
+.message-box {
+  height: 920px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 430px;
+  margin: auto;
+  overflow: auto;
+}
+.message-bar {
+  background-image: url('@|chart-bg.png|');
+  width: 725px;
+  height: 172px;
+  margin: 15px auto;
+  position: relative;
+  h2 {
+    position: absolute;
+    left: 100px;
+    top: 31px;
+    font-size: 28px;
+    line-height: 30px;
+    color: #595d66;
+    background-image: url('@|arrow.png|');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 45px;
+  }
+  h3 {
+    position: absolute;
+    left: 50px;
+    font-size: 30px;
+    top: 73px;
+    line-height: 40px;
+    color: #595d66;
+  }
+  h4 {
+    position: absolute;
+    left: 50px;
+    font-size: 30px;
+    top: 117px;
+    line-height: 40px;
+    color: #595d66;
+  }
+}
+</style>

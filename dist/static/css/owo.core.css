@@ -110,6 +110,19 @@ li {
 .loading-box .text {
   bottom: -14%;
 }
+[o-animation="shrink"] {
+  -webkit-animation: shrink 1s linear alternate infinite;
+  animation: shrink 1s linear alternate infinite;
+}
+@-webkit-keyframes shrink{
+  0%{-webkit-transform:scale(0.9);}
+  100%{-webkit-transform:scale(1);}
+}
+@keyframes shrink{
+  0%{transform:scale(0.9);}
+  100%{transform:scale(1);}
+}
+
 .page-1 .so-0 {
   left: 0px;
   top: 0px;
@@ -164,5 +177,396 @@ li {
   left: 0px;
   top: 0px;
   z-index: -8;
+}
+
+.page-1 .button-1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 180px;
+}
+[o-animation="bottomToTopHide"] {
+  -webkit-animation: bottomToTopHide 1.5s linear infinite;
+  animation: bottomToTopHide 1.5s linear infinite;
+}
+
+@-webkit-keyframes bottomToTopHide {
+  0% { transform: translateY(0px);}
+  100% {transform: translateY(-30px);opacity: 0;}
+}
+
+@keyframes bottomToTopHide {
+  0% { transform: translateY(0px);}
+  100% {transform: translateY(-30px);opacity: 0;}
+}
+
+.page-2 .so-0 {
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1508px;
+  z-index: 0;
+}
+
+.page-2 .so-1 {
+  left: 243px;
+  top: 1236px;
+  z-index: -1;
+}
+
+.page-2 .so-2 {
+  left: 336px;
+  top: 1141px;
+  z-index: -2;
+}
+
+.page-2 .so-3 {
+  left: 25px;
+  top: 190px;
+  z-index: -3;
+}
+
+.page-2 .so-4 {
+  left: 0px;
+  top: 0px;
+  z-index: -4;
+}
+.page3 .so-3 {
+  left: 25px;
+  top: 190px;
+  z-index: -3;
+}
+
+.page3 .message-box {
+  height: 920px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 430px;
+  margin: auto;
+  overflow: auto;
+}
+
+.page3 .message-bar {
+  background-image: url('../resource/chart-bg.png');
+  width: 725px;
+  height: 172px;
+  margin: 15px auto;
+  position: relative;
+}
+
+.page3 .message-bar h2 {
+  position: absolute;
+  left: 100px;
+  top: 31px;
+  font-size: 28px;
+  line-height: 30px;
+  color: #595d66;
+  background-image: url('../resource/arrow.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 45px;
+}
+
+.page3 .message-bar h3 {
+  position: absolute;
+  left: 50px;
+  font-size: 30px;
+  top: 73px;
+  line-height: 40px;
+  color: #595d66;
+}
+
+.page3 .message-bar h4 {
+  position: absolute;
+  left: 50px;
+  font-size: 30px;
+  top: 117px;
+  line-height: 40px;
+  color: #595d66;
+}
+.page4 .so-0 {
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1508px;
+  z-index: 9;
+}
+
+.page4 .so-1 {
+  left: 313px;
+  top: 1176px;
+  z-index: 9;
+}
+
+.page4 .so-2 {
+  left: 558px;
+  top: 1009px;
+  z-index: 9;
+}
+
+.page4 .so-3 {
+  left: 344px;
+  top: 1009px;
+  z-index: 9;
+}
+
+.page4 .so-4 {
+  left: 89px;
+  top: 1015px;
+  z-index: 9;
+}
+
+.page4 .so-5 {
+  left: 543px;
+  top: 819px;
+  z-index: 9;
+}
+
+.page4 .so-6 {
+  left: 344px;
+  top: 819px;
+  z-index: 9;
+}
+
+.page4 .so-7 {
+  left: 114px;
+  top: 815px;
+  z-index: 9;
+}
+
+.page4 video {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.page4 .shalt {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, 0), #000000);
+}
+
+.page4 .so2-0 {
+  left: 131px;
+  top: 362px;
+  width: 484px;
+  height: 401px;
+  z-index: 0;
+  opacity: 0;
+}
+
+.page4 .so2-1 {
+  left: 39px;
+  top: 321px;
+  z-index: -1;
+}
+
+.page4 .so2-2 {
+  left: 45px;
+  top: 0px;
+  z-index: -2;
+}
+
+.page4 .so2-3 {
+  left: 166px;
+  top: 112px;
+  z-index: -3;
+}
+
+.page4 .so2-4 {
+  left: 0px;
+  top: 212px;
+  z-index: -4;
+}
+
+.page4 .name-box {
+  position: absolute;
+  top: 200px;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.page4 .name-box h1 {
+  font-size: 54px;
+  line-height: 40px;
+}
+
+.page4 .name-box h2 {
+  font-size: 26px;
+  line-height: 80px;
+}
+.page-1 .so-0 {
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1508px;
+  z-index: 0;
+}
+
+.page-1 .so-1 {
+  left: 296px;
+  top: 1291px;
+  z-index: -1;
+}
+
+.page-1 .so-2 {
+  left: 322px;
+  top: 1155px;
+  z-index: -2;
+}
+
+.page-1 .so-3 {
+  left: 546px;
+  top: 1291px;
+  z-index: -3;
+}
+
+.page-1 .so-4 {
+  left: 545px;
+  top: 1155px;
+  z-index: -4;
+}
+
+.page-1 .so-5 {
+  left: 102px;
+  top: 1291px;
+  z-index: -5;
+}
+
+.page-1 .so-6 {
+  left: 263px;
+  top: 199px;
+  z-index: -6;
+}
+
+.page-1 .so-7 {
+  left: 100px;
+  top: 1155px;
+  z-index: -7;
+}
+
+.page-1 .so-8 {
+  left: 0px;
+  top: 0px;
+  z-index: -8;
+}
+.share-page {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+.share-page img {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 67%;
+}
+/* 页面切换动画 */
+.o-page-moveToTop {
+	-webkit-animation: moveToTop .6s ease both;
+	-moz-animation: moveToTop .6s ease both;
+	animation: moveToTop .6s ease both;
+}
+
+@-webkit-keyframes moveToTop {
+	to { -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes moveToTop {
+	to { -moz-transform: translateY(-100%); }
+}
+@keyframes moveToTop {
+	to { transform: translateY(-100%); }
+}
+.o-page-moveFromBottom {
+	-webkit-animation: moveFromBottom .6s ease both;
+	-moz-animation: moveFromBottom .6s ease both;
+	animation: moveFromBottom .6s ease both;
+}
+@-webkit-keyframes moveFromBottom {
+	from { -webkit-transform: translateY(100%); }
+}
+@-moz-keyframes moveFromBottom {
+	from { -moz-transform: translateY(100%); }
+}
+@keyframes moveFromBottom {
+	from { transform: translateY(100%); }
+}
+.o-page-moveToBottom {
+	-webkit-animation: moveToBottom .6s ease both;
+	-moz-animation: moveToBottom .6s ease both;
+	animation: moveToBottom .6s ease both;
+}
+
+@-webkit-keyframes moveToBottom {
+	to { -webkit-transform: translateY(100%); }
+}
+@-moz-keyframes moveToBottom {
+	to { -moz-transform: translateY(100%); }
+}
+@keyframes moveToBottom {
+	to { transform: translateY(100%); }
+}
+.o-page-moveFromTop {
+	-webkit-animation: moveFromTop .6s ease both;
+	-moz-animation: moveFromTop .6s ease both;
+	animation: moveFromTop .6s ease both;
+}
+
+@-webkit-keyframes moveFromTop {
+	from { -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes moveFromTop {
+	from { -moz-transform: translateY(-100%); }
+}
+@keyframes moveFromTop {
+	from { transform: translateY(-100%); }
+}
+
+/* 动画效果 */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
 }
 

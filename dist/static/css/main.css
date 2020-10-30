@@ -14,6 +14,10 @@ body, html {
   width: 100%;
   height: 100%;
 }
+body {
+  background-image: url('../resource/page2-153.jpg');
+  background-size: 100% auto;
+}
 html {
   background-color: white;
   background-repeat: no-repeat;

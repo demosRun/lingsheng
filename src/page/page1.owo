@@ -1,14 +1,9 @@
 <template lang="pug">
 .page-1
   .so.so-0
-    img.so.so-1(src="@|737.png|")
-    img.so.so-2(src="@|738.png|")
-    img.so.so-3(src="@|740.png|")
-    img.so.so-4(src="@|739.png|")
-    img.so.so-5(src="@|736.png|")
     img.so.so-6(src="@|250.png|")
-    img.so.so-7(src="@|372.png|")
     img.so.so-8(src="@|742.jpg|")
+    img.button-1(src="@|button-1.png|" o-animation="shrink" go="page2//moveToTop/moveFromBottom/true/moveToBottom/moveFromTop")
 </template>
 
 <script>
@@ -67,5 +62,12 @@
   left: 0px;
   top: 0px;
   z-index: -8;
+}
+.button-1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 180px;
 }
 </style>
