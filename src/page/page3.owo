@@ -81,7 +81,7 @@ module.exports = {
   }
   h3 {
     position: absolute;
-    left: 50px;
+    left: 35px;
     font-size: 30px;
     top: 73px;
     line-height: 40px;
@@ -89,7 +89,7 @@ module.exports = {
   }
   h4 {
     position: absolute;
-    left: 50px;
+    left: 35px;
     font-size: 30px;
     top: 117px;
     line-height: 40px;

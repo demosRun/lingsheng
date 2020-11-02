@@ -1,0 +1,56 @@
+<template lang="pug">
+.time-clock
+  .time
+  .day
+  p 想你了，打个电话
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      let myDate = new Date();
+      this.getTime()
+      let dayArr = ['星期天','星期一','星期二','星期三','星期四','星期五','星期六']
+      this.query('.day').innerText = `${myDate.getMonth() + 1}月${myDate.getDate()}日${dayArr[myDate.getDay()]}`
+    },
+    getTime: function () {
+      var myDate = new Date()
+      let hours = myDate.getHours()
+      let minutes = myDate.getMinutes()
+      if (hours < 10) hours = '0' + hours
+      if (minutes < 10) minutes = '0' + minutes
+      this.query('.time').innerText = `${hours}  ${minutes}`
+      setTimeout(() => {
+        this.getTime()
+      }, 60000);
+    }
+  }
+</script>
+
+
+<style lang="less">
+.time-clock {
+  position: absolute;
+  left: 40px;
+  top: 170px;
+  .time {
+    color: white;
+    font-size: 90px;
+    line-height: 120px;
+    font-weight: bold;
+  }
+}
+.day {
+  color: white;
+  font-size: 38px;
+  line-height: 44px;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+p {
+  color: white;
+  font-size: 28px;
+  line-height: 54px;
+}
+</style>

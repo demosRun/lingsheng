@@ -223,6 +223,33 @@ li {
   100% {transform: translateY(-30px);opacity: 0;}
 }
 
+.time-clock {
+  position: absolute;
+  left: 40px;
+  top: 170px;
+}
+
+.time-clock .time {
+  color: white;
+  font-size: 90px;
+  line-height: 120px;
+  font-weight: bold;
+}
+
+.time-clock .day {
+  color: white;
+  font-size: 38px;
+  line-height: 44px;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.time-clock p {
+  color: white;
+  font-size: 28px;
+  line-height: 54px;
+}
 .page-2 .so-0 {
   left: 0px;
   top: 0px;
@@ -293,7 +320,7 @@ li {
 
 .page3 .message-bar h3 {
   position: absolute;
-  left: 50px;
+  left: 35px;
   font-size: 30px;
   top: 73px;
   line-height: 40px;
@@ -302,7 +329,7 @@ li {
 
 .page3 .message-bar h4 {
   position: absolute;
-  left: 50px;
+  left: 35px;
   font-size: 30px;
   top: 117px;
   line-height: 40px;
@@ -499,7 +526,7 @@ li {
 
 .page5 .name-box {
   position: absolute;
-  top: 200px;
+  top: 160px;
   text-align: center;
   width: 100%;
   color: white;
@@ -507,12 +534,17 @@ li {
 
 .page5 .name-box h1 {
   font-size: 54px;
-  line-height: 40px;
+  line-height: 60px;
 }
 
 .page5 .name-box h2 {
   font-size: 26px;
-  line-height: 80px;
+  line-height: 60px;
+}
+
+.page5 .name-box h3 {
+  font-size: 26px;
+  line-height: 40px;
 }
 
 .page5 .icon-box {
@@ -660,6 +692,51 @@ li {
 }
 @keyframes moveFromTop {
 	from { transform: translateY(-100%); }
+}
+.o-page-scaleDown {
+	-webkit-animation: scaleDown .7s ease both;
+	-moz-animation: scaleDown .7s ease both;
+	animation: scaleDown .7s ease both;
+}
+
+@-webkit-keyframes scaleDown {
+	to { opacity: 0; -webkit-transform: scale(.8); }
+}
+@-moz-keyframes scaleDown {
+	to { opacity: 0; -moz-transform: scale(.8); }
+}
+@keyframes scaleDown {
+	to { opacity: 0; transform: scale(.8); }
+}
+.o-page-scaleUpDown {
+	-webkit-animation: scaleUpDown .5s ease both;
+	-moz-animation: scaleUpDown .5s ease both;
+	animation: scaleUpDown .5s ease both;
+}
+
+@-webkit-keyframes scaleUpDown {
+	from { opacity: 0; -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes scaleUpDown {
+	from { opacity: 0; -moz-transform: scale(1.2); }
+}
+@keyframes scaleUpDown {
+	from { opacity: 0; transform: scale(1.2); }
+}
+.o-page-scaleUp {
+	-webkit-animation: scaleUp .7s ease both;
+	-moz-animation: scaleUp .7s ease both;
+	animation: scaleUp .7s ease both;
+}
+
+@-webkit-keyframes scaleUp {
+	from { opacity: 0; -webkit-transform: scale(.8); }
+}
+@-moz-keyframes scaleUp {
+	from { opacity: 0; -moz-transform: scale(.8); }
+}
+@keyframes scaleUp {
+	from { opacity: 0; transform: scale(.8); }
 }
 
 /* 动画效果 */

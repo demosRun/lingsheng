@@ -6,7 +6,7 @@
     h3 
   img.so.so-1(src="@|page3-506.png|" go="share//moveToTop/moveFromBottom/true/moveToBottom/moveFromTop")
   img.icon-box(src="@|icon-bar.png|")
-  img.back(src="@|back.png|" go="page4//moveToBottom/moveFromTop/true/moveToTop/moveFromBottom")
+  img.back(src="@|back.png|" go="page3//moveToBottom/moveFromTop/true/moveToTop/moveFromBottom")
   //- 彩铃的对话
   .so.so2-0
     img.so.so2-1(src="@|page3-748.png|")
@@ -29,11 +29,25 @@ module.exports = {
     owo.animate('fadeInRight', this.query('.so2-2'), 500)
     owo.animate('fadeInRight', this.query('.so2-3'), 2500)
     owo.animate('fadeInRight', this.query('.so2-4'), 4500)
-    owo.animate('fadeInRight', this.query('.so2-1'), 6200)
+    owo.animate('fadeInRight', this.query('.so2-1'), 6800)
     this.query('.so2-0').style.opacity = 1
+    this.creatTime()
   },
   creatTime: function () {
-    this.query('.name-box h2').innerText = owo.state.cityText
+    if (this.data.minute >= 60) {
+      this.data.minute = 0
+      this.data.second++
+    }
+    let minuteText = this.data.minute < 10 ? '0' + this.data.minute : this.data.minute
+    let secondText = this.data.second < 10 ? '0' + this.data.second : this.data.second
+    this.data.second++
+    this.query('.name-box h3').innerText = `${minuteText}:${secondText}`
+    setTimeout(() => {
+      if (owo.activePage === 'page5') {
+        this.creatTime()
+      }
+    }, 1000);
+    
   }
 }
 </script>
@@ -96,17 +110,21 @@ video {
 }
 .name-box {
   position: absolute;
-  top: 200px;
+  top: 160px;
   text-align: center;
   width: 100%;
   color: white;
   h1 {
     font-size: 54px;
-    line-height: 40px;
+    line-height: 60px;
   }
   h2 {
     font-size: 26px;
-    line-height: 80px;
+    line-height: 60px;
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 40px;
   }
 }
 .icon-box {
