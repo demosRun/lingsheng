@@ -54,10 +54,32 @@ li {
   list-style: none;
 }
 
+[o-animation="rotate"] {
+  -webkit-animation: rotate 6s linear alternate infinite;
+  animation: rotate 6s linear alternate infinite;
+  transform-origin: center top;
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
 .loading-box {
   width: 100%;
   height: 100%;
-  background-image: url('https://cunchu.site/ozzx/resource/lanse.jpg');
+  background-color: #c4b47a;
 }
 
 .loading-box .loading {
@@ -81,7 +103,7 @@ li {
   right: 0;
   border-radius: 20px;
   padding: 10px;
-  box-shadow: 2px 3px 9px #5d739c;
+  box-shadow: 2px 3px 9px #ab9f74;
 }
 
 .loading-box .num-bar {
@@ -393,6 +415,7 @@ li {
   text-align: center;
   width: 100%;
   color: white;
+  z-index: 9;
 }
 
 .page4 .name-box h1 {
@@ -403,6 +426,108 @@ li {
 .page4 .name-box h2 {
   font-size: 26px;
   line-height: 80px;
+}
+
+.page4 .shalt2 {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 500px;
+  background: linear-gradient(#000000, rgba(0, 0, 0, 0));
+}
+.page5 {
+  background-color: #4c4038;
+}
+
+.page5 video {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.page5 .shalt {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, 0), #000000);
+}
+
+.page5 .so-1 {
+  position: absolute;
+  left: 313px;
+  top: 1176px;
+  z-index: 9;
+}
+
+.page5 .so2-0 {
+  left: 131px;
+  top: 362px;
+  width: 484px;
+  height: 401px;
+  z-index: 0;
+  opacity: 0;
+}
+
+.page5 .so2-1 {
+  left: 39px;
+  top: 321px;
+  z-index: -1;
+}
+
+.page5 .so2-2 {
+  left: 45px;
+  top: 0px;
+  z-index: -2;
+}
+
+.page5 .so2-3 {
+  left: 166px;
+  top: 112px;
+  z-index: -3;
+}
+
+.page5 .so2-4 {
+  left: 0px;
+  top: 212px;
+  z-index: -4;
+}
+
+.page5 .name-box {
+  position: absolute;
+  top: 200px;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.page5 .name-box h1 {
+  font-size: 54px;
+  line-height: 40px;
+}
+
+.page5 .name-box h2 {
+  font-size: 26px;
+  line-height: 80px;
+}
+
+.page5 .icon-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 820px;
+}
+
+.page5 .back {
+  position: absolute;
+  left: 85px;
+  bottom: 214px;
+  z-index: 9;
 }
 .page-1 .so-0 {
   left: 0px;

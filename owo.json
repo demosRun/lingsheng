@@ -126,6 +126,11 @@
 			"type": "page"
 		},
 		{
+			"name": "page5",
+			"src": "/src/page/page5.owo",
+			"type": "page"
+		},
+		{
 			"name": "share",
 			"src": "/src/page/share.owo",
 			"type": "page"

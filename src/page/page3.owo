@@ -2,34 +2,46 @@
 .page3
   img.so.so-3(src="@|page2-740.png|")
   .message-box
-    .message-bar(o-tap="selectIt")
+    .message-bar(o-tap="selectIt('qinghai', '妈妈', '青海')")
       h2 未接来电·3分钟前
+      h3 妈妈(5)
+      h4 青海  响铃15秒
+    .message-bar(o-tap="selectIt('jiangxi', '小皮', '江西')")
+      h2 未接来电·5分钟前
       h3 小皮
       h4 江西  响铃11秒
-    .message-bar
-      h2 未接来电·3分钟前
-      h3 小皮
-      h4 江西  响铃11秒
-    .message-bar
-      h2 未接来电·3分钟前
-      h3 小皮
-      h4 江西  响铃11秒
-    .message-bar
-      h2 未接来电·3分钟前
-      h3 小皮
-      h4 江西  响铃11秒
-    .message-bar
-      h2 未接来电·3分钟前
-      h3 小皮
-      h4 江西  响铃11秒
-    .message-bar
-      h2 未接来电·3分钟前
-      h3 小皮
-      h4 江西  响铃11秒
+    .message-bar(o-tap="selectIt('guangxi', '二花', '广西')")
+      h2 未接来电·5分钟前
+      h3 二花
+      h4 广西  响铃11秒
+    .message-bar(o-tap="selectIt('gansu', '领导', '甘肃')")
+      h2 未接来电·22分钟前
+      h3 领导
+      h4 甘肃  响铃8秒
+    .message-bar(o-tap="selectIt('yunnan', '小鹏', '云南')")
+      h2 未接来电·30分钟前
+      h3 小鹏
+      h4 云南  响铃7秒
+    .message-bar(o-tap="selectIt('jilin', '姥爷', '吉林')")
+      h2 未接来电·37分钟前
+      h3 姥爷
+      h4 吉林  响铃8秒
+    .message-bar(o-tap="selectIt('henan', '娜姐', '河南')")
+      h2 未接来电·50分钟前
+      h3 娜姐
+      h4 河南  响铃20秒
+    .message-bar(o-tap="selectIt('tianjin', '庞贝', '天津')")
+      h2 未接来电·1小时前
+      h3 庞贝
+      h4 天津  响铃7秒
 </template>
 <script>
 module.exports = {
-  selectIt: function () {
+  selectIt: function (city, name, cityText) {
+    owo.state.plant = city
+    owo.state.name = name
+    owo.state.cityText = cityText
+    document.querySelector('.page4 video').src = 'http://demos.run/lingsheng/' + owo.state.plant + '.mp4'
     owo.go('page4//moveToTop/moveFromBottom/true/moveToBottom/moveFromTop')
   }
 }

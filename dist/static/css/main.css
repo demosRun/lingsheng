@@ -17,6 +17,7 @@ body, html {
 body {
   background-image: url('../resource/page2-153.jpg');
   background-size: 100% auto;
+  opacity: 0;
 }
 html {
   background-color: white;

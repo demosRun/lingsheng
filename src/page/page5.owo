@@ -1,0 +1,125 @@
+<template lang="pug">
+.page5
+  .name-box
+    h1
+    h2 正在播放对方视频彩铃
+    h3 
+  img.so.so-1(src="@|page3-506.png|" go="share//moveToTop/moveFromBottom/true/moveToBottom/moveFromTop")
+  img.icon-box(src="@|icon-bar.png|")
+  img.back(src="@|back.png|" go="page4//moveToBottom/moveFromTop/true/moveToTop/moveFromBottom")
+  //- 彩铃的对话
+  .so.so2-0
+    img.so.so2-1(src="@|page3-748.png|")
+    img.so.so2-2(src="@|page3-749.png|")
+    img.so.so2-3(src="@|page3-750.png|")
+    img.so.so2-4(src="@|page3-751.png|")
+  .shalt
+</template>
+<script>
+module.exports = {
+  data: {
+    minute: 0,
+    second: 0
+  },
+  show: function () {
+    if (!owo.state.name) owo.state.name = '妈妈'
+    this.query('.name-box h1').innerText = owo.state.name
+    this.query('.name-box h2').innerText = owo.state.cityText
+    new Audio("@|duihua.mp3|").play()
+    owo.animate('fadeInRight', this.query('.so2-2'), 500)
+    owo.animate('fadeInRight', this.query('.so2-3'), 2500)
+    owo.animate('fadeInRight', this.query('.so2-4'), 4500)
+    owo.animate('fadeInRight', this.query('.so2-1'), 6200)
+    this.query('.so2-0').style.opacity = 1
+  },
+  creatTime: function () {
+    this.query('.name-box h2').innerText = owo.state.cityText
+  }
+}
+</script>
+<style lang="less">
+.page5 {
+  background-color: #4c4038;
+}
+video {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.shalt {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.so-1 {
+  position: absolute;
+  left: 313px;
+  top: 1176px;
+  z-index: 9;
+}
+.icon-box {
+
+}
+.so2-0 {
+  left: 131px;
+  top: 362px;
+  width: 484px;
+  height: 401px;
+  z-index: 0;
+  opacity: 0;
+}
+.so2-1 {
+  left: 39px;
+  top: 321px;
+  z-index: -1;
+}
+.so2-2 {
+  left: 45px;
+  top: 0px;
+  z-index: -2;
+}
+.so2-3 {
+  left: 166px;
+  top: 112px;
+  z-index: -3;
+}
+.so2-4 {
+  left: 0px;
+  top: 212px;
+  z-index: -4;
+}
+.name-box {
+  position: absolute;
+  top: 200px;
+  text-align: center;
+  width: 100%;
+  color: white;
+  h1 {
+    font-size: 54px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 26px;
+    line-height: 80px;
+  }
+}
+.icon-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 820px;
+}
+.back {
+  position: absolute;
+  left: 85px;
+  bottom: 214px;
+  z-index: 9;
+}
+</style>
