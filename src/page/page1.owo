@@ -4,6 +4,7 @@
     img.so.so-6(src="@|250.png|")
     img.so.so-8(src="@|742.jpg|")
     img.button-1(src="@|button-1.png|" o-animation="shrink" go="page2//moveToTop/moveFromBottom/true/moveToBottom/moveFromTop")
+    //- img.main(src="@|main.png|")
 </template>
 
 <script>
@@ -69,5 +70,13 @@
   right: 0;
   margin: 0 auto;
   bottom: 180px;
+}
+.main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 684px;
+  width: 750px;
+  height: auto;
 }
 </style>

@@ -1,6 +1,7 @@
 <template lang="pug">
 .page3
-  img.so.so-3(src="@|page2-740.png|")
+  //- img.so.so-3(src="@|page2-740.png|")
+  plug(_name="timeClock" _src="./src/page/timeClock.owo")
   .message-box
     .message-bar(o-tap="selectIt('qinghai', '妈妈', '青海')")
       h2 未接来电·3分钟前

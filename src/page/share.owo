@@ -4,7 +4,7 @@
     img.so.so-1(src="@|737.png|")
     img.so.so-2(src="@|738.png|" o-tap="window.location.href='https://y.migu.cn/app/gm/v1/index.html?id=90562&from=groupmessage&isappinstalled=0'")
     img.so.so-3(src="@|740.png|")
-    img.so.so-4(src="@|739.png|" o-tap="owo.script.shareShow.switchShare()")
+    img.so.so-4(src="@|739.png|" go="sharePage//moveToBottom/moveFromTop/true/moveToTop/moveFromBottom")
     img.so.so-5(src="@|736.png|")
     img.so.so-6(src="@|250.png|")
     img.so.so-7(src="@|372.png|" go="page3//moveToBottom/moveFromTop/true/moveToTop/moveFromBottom")

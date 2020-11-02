@@ -90,6 +90,11 @@
 			"name": "touch",
 			"afterbody": true,
 			"src": "./owo_modules/touch.js"
+		},
+		{
+			"name": "toast",
+			"afterbody": true,
+			"src": "./owo_modules/toast.js"
 		}
 	],
 	"styleList": [
@@ -139,6 +144,11 @@
 			"name": "shareShow",
 			"src": "https://template.owo.ink/51ca7ab4c38de699.owo",
 			"type": "block"
+		},
+		{
+			"name": "sharePage",
+			"src": "/src/page/sharePage.owo",
+			"type": "page"
 		}
 	],
 	"mode": {

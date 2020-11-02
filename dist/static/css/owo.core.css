@@ -208,6 +208,15 @@ li {
   margin: 0 auto;
   bottom: 180px;
 }
+
+.page-1 .main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 684px;
+  width: 750px;
+  height: auto;
+}
 [o-animation="bottomToTopHide"] {
   -webkit-animation: bottomToTopHide 1.5s linear infinite;
   animation: bottomToTopHide 1.5s linear infinite;
@@ -249,6 +258,54 @@ li {
   color: white;
   font-size: 28px;
   line-height: 54px;
+}
+
+.time-clock .doit {
+  position: absolute;
+  left: 99px;
+  top: 3px;
+  color: white;
+  font-size: 84px;
+  line-height: 100px;
+}
+
+@-webkit-keyframes clockAni {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+
+@keyframes clockAni {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+
+.time-clock .elementToAnimate {
+  -webkit-animation: clockAni 2s infinite 0s linear;
+          animation: clockAni 2s infinite 0s linear;
 }
 .page-2 .so-0 {
   left: 0px;
@@ -633,6 +690,7 @@ li {
   right: 0;
   width: 67%;
 }
+
 /* 页面切换动画 */
 .o-page-moveToTop {
 	-webkit-animation: moveToTop .6s ease both;

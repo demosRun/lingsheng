@@ -3,6 +3,7 @@
   .time
   .day
   p 想你了，打个电话
+  .doit.elementToAnimate :
 </template>
 
 <script>
@@ -52,5 +53,31 @@ p {
   color: white;
   font-size: 28px;
   line-height: 54px;
+}
+.doit {
+  position: absolute;
+  left: 99px;
+  top: 3px;
+  color: white;
+  font-size: 84px;
+  line-height: 100px;
+}
+@keyframes clockAni {
+    0%{
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+    50%{
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    100%{
+      transform: rotate(0deg);
+      opacity: 0;
+    }
+}
+
+.elementToAnimate {
+  animation: clockAni 2s infinite 0s linear;
 }
 </style>
