@@ -16,6 +16,7 @@
   .shalt
 </template>
 <script>
+var duihuaMusic = new Audio("@|duihua.mp3|")
 module.exports = {
   data: {
     minute: 0,
@@ -25,7 +26,8 @@ module.exports = {
     if (!owo.state.name) owo.state.name = '妈妈'
     this.query('.name-box h1').innerText = owo.state.name
     this.query('.name-box h2').innerText = owo.state.cityText
-    new Audio("@|duihua.mp3|").play()
+    duihuaMusic.currentTime = 0
+    duihuaMusic.play()
     owo.animate('fadeInRight', this.query('.so2-2'), 500)
     owo.animate('fadeInRight', this.query('.so2-3'), 2500)
     owo.animate('fadeInRight', this.query('.so2-4'), 4500)

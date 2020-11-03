@@ -1,6 +1,6 @@
 <template lang="pug">
 .sharePage
-  img(src="@|share.png|")
+  img(src="@|share.jpg|")
 </template>
 <script>
 module.exports = {

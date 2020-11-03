@@ -13,8 +13,8 @@
 
 <script>
   module.exports = {
-    created: function () {
-
+    show: function () {
+      duihuaMusic.pause()
     }
   }
 </script>

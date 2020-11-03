@@ -691,6 +691,68 @@ li {
   width: 67%;
 }
 
+.music-menu {
+  position: absolute;
+  right: 10px;
+  top: 8%;
+  z-index: 9;
+  width: 36px;
+  height: 36px;
+}
+
+.music-menu .music-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.music-menu .active {
+  -webkit-animation: musicturn 12s linear infinite;
+          animation: musicturn 12s linear infinite;
+}
+
+@-webkit-keyframes musicturn {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(90deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(270deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes musicturn {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(90deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(270deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
 /* 页面切换动画 */
 .o-page-moveToTop {
 	-webkit-animation: moveToTop .6s ease both;

@@ -149,6 +149,11 @@
 			"name": "sharePage",
 			"src": "/src/page/sharePage.owo",
 			"type": "page"
+		},
+		{
+			"name": "music",
+			"src": "https://template.owo.ink/947eded0f03783ad.owo",
+			"type": "block"
 		}
 	],
 	"mode": {

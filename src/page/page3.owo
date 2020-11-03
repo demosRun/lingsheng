@@ -15,17 +15,17 @@
       h2 未接来电·5分钟前
       h3 二花
       h4 广西  响铃11秒
-    .message-bar(o-tap="selectIt('gansu', '领导', '甘肃')")
+    .message-bar(o-tap="selectIt('gansu', '小北', '甘肃')")
       h2 未接来电·22分钟前
-      h3 领导
+      h3 小北
       h4 甘肃  响铃8秒
     .message-bar(o-tap="selectIt('yunnan', '小鹏', '云南')")
       h2 未接来电·30分钟前
       h3 小鹏
       h4 云南  响铃7秒
-    .message-bar(o-tap="selectIt('jilin', '姥爷', '吉林')")
+    .message-bar(o-tap="selectIt('jilin', '小米', '吉林')")
       h2 未接来电·37分钟前
-      h3 姥爷
+      h3 小米
       h4 吉林  响铃8秒
     .message-bar(o-tap="selectIt('henan', '娜姐', '河南')")
       h2 未接来电·50分钟前
@@ -38,6 +38,10 @@
 </template>
 <script>
 module.exports = {
+  show: function () {
+    duihuaMusic.pause()
+    if (owo.script.music.data.musicIsPlay) owo.script.music.pause()
+  },
   selectIt: function (city, name, cityText) {
     owo.state.plant = city
     owo.state.name = name
