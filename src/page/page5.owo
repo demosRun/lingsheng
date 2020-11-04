@@ -24,7 +24,7 @@ module.exports = {
   },
   show: function () {
     // @|gansu.mp3| @|guangxi.mp3| @|henan.mp3| @|jiangxi.mp3| @|jilin.mp3| @|qinghai.mp3| @|tianjin.mp3| @|yunnan.mp3|
-    var duihuaMusic = new Audio(`./static/resource/${owo.state.plant}.mp3`)
+    duihuaMusic = new Audio(`./static/resource/${owo.state.plant}.mp3`)
     if (!owo.state.name) owo.state.name = '妈妈'
     this.query('.name-box h1').innerText = owo.state.name
     this.query('.name-box h2').innerText = owo.state.cityText

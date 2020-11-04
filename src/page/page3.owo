@@ -39,7 +39,7 @@
 <script>
 module.exports = {
   show: function () {
-    duihuaMusic.pause()
+    if (duihuaMusic) duihuaMusic.pause()
     if (owo.script.music.data.musicIsPlay) owo.script.music.pause()
   },
   selectIt: function (city, name, cityText) {
