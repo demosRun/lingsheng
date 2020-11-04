@@ -6,7 +6,7 @@
 <script>
   // 微信自动播放音乐
   document.addEventListener("WeixinJSBridgeReady", function () {
-    owo.script.playMusic.play()
+    owo.script.music.play()
   }, false)
   module.exports = {
     data: {
