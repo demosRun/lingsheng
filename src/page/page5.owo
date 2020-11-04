@@ -9,36 +9,38 @@
   img.back(src="@|back.png|" go="page3//moveToBottom/moveFromTop/true/moveToTop/moveFromBottom")
   //- 彩铃的对话
   .so.so2-0
-    img.so.so2-1(src="@|page3-748.png|")
+    //- img.so.so2-1(src="@|page3-748.png|")
     img.so.so2-2(src="@|page3-749.png|")
     img.so.so2-3(src="@|page3-750.png|")
     img.so.so2-4(src="@|page3-751.png|")
   .shalt
 </template>
 <script>
-var duihuaMusic = new Audio("@|duihua.mp3|")
+var duihuaMusic = null
 module.exports = {
   data: {
     minute: 0,
     second: 0
   },
   show: function () {
+    // @|gansu.mp3| @|guangxi.mp3| @|henan.mp3| @|jiangxi.mp3| @|jilin.mp3| @|qinghai.mp3| @|tianjin.mp3| @|yunnan.mp3|
+    var duihuaMusic = new Audio(`./static/resource/${owo.state.plant}.mp3`)
     if (!owo.state.name) owo.state.name = '妈妈'
     this.query('.name-box h1').innerText = owo.state.name
     this.query('.name-box h2').innerText = owo.state.cityText
     duihuaMusic.currentTime = 0
     duihuaMusic.play()
-    owo.animate('fadeInRight', this.query('.so2-2'), 500)
-    owo.animate('fadeInRight', this.query('.so2-3'), 2500)
-    owo.animate('fadeInRight', this.query('.so2-4'), 4500)
-    owo.animate('fadeInRight', this.query('.so2-1'), 6800)
+    owo.animate('fadeInLeft', this.query('.so2-2'), 500)
+    owo.animate('fadeInRight', this.query('.so2-3'), 2200)
+    owo.animate('fadeInLeft', this.query('.so2-4'), 4500)
+    // owo.animate('fadeInRight', this.query('.so2-1'), 6800)
     this.query('.so2-0').style.opacity = 1
     this.creatTime()
   },
   creatTime: function () {
-    if (this.data.minute >= 60) {
-      this.data.minute = 0
-      this.data.second++
+    if (this.data.second >= 60) {
+      this.data.second = 0
+      this.data.minute++
     }
     let minuteText = this.data.minute < 10 ? '0' + this.data.minute : this.data.minute
     let secondText = this.data.second < 10 ? '0' + this.data.second : this.data.second
@@ -96,19 +98,17 @@ video {
   z-index: -1;
 }
 .so2-2 {
-  left: 45px;
+  left: 167px;
   top: 0px;
   z-index: -2;
 }
 .so2-3 {
-  left: 166px;
-  top: 112px;
-  z-index: -3;
+  left: -34px;
+  top: 121px;
 }
 .so2-4 {
-  left: 0px;
-  top: 212px;
-  z-index: -4;
+  left: 50px;
+  top: 243px;
 }
 .name-box {
   position: absolute;

@@ -7,33 +7,33 @@
       h2 未接来电·3分钟前
       h3 妈妈(5)
       h4 青海  响铃15秒
-    .message-bar(o-tap="selectIt('jiangxi', '小皮', '江西')")
+    .message-bar(o-tap="selectIt('jiangxi', '能哥', '江西')")
       h2 未接来电·5分钟前
-      h3 小皮
+      h3 能哥
       h4 江西  响铃11秒
-    .message-bar(o-tap="selectIt('guangxi', '二花', '广西')")
+    .message-bar(o-tap="selectIt('guangxi', '阿宁', '广西')")
       h2 未接来电·5分钟前
-      h3 二花
+      h3 阿宁
       h4 广西  响铃11秒
-    .message-bar(o-tap="selectIt('gansu', '小北', '甘肃')")
+    .message-bar(o-tap="selectIt('gansu', '小王', '甘肃')")
       h2 未接来电·22分钟前
-      h3 小北
+      h3 小王
       h4 甘肃  响铃8秒
-    .message-bar(o-tap="selectIt('yunnan', '小鹏', '云南')")
+    .message-bar(o-tap="selectIt('yunnan', '晓雯', '云南')")
       h2 未接来电·30分钟前
-      h3 小鹏
+      h3 晓雯
       h4 云南  响铃7秒
-    .message-bar(o-tap="selectIt('jilin', '小米', '吉林')")
+    .message-bar(o-tap="selectIt('jilin', '甜姐', '吉林')")
       h2 未接来电·37分钟前
-      h3 小米
+      h3 甜姐
       h4 吉林  响铃8秒
-    .message-bar(o-tap="selectIt('henan', '娜姐', '河南')")
+    .message-bar(o-tap="selectIt('henan', '三金', '河南')")
       h2 未接来电·50分钟前
-      h3 娜姐
+      h3 三金
       h4 河南  响铃20秒
-    .message-bar(o-tap="selectIt('tianjin', '庞贝', '天津')")
+    .message-bar(o-tap="selectIt('tianjin', '温温', '天津')")
       h2 未接来电·1小时前
-      h3 庞贝
+      h3 温温
       h4 天津  响铃7秒
 </template>
 <script>
